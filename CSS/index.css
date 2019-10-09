@@ -1,0 +1,279 @@
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+#logo{
+    height:60px;
+}
+#navbar{
+    font-size: 15px;
+    box-shadow: 0px 0px 8px 0px #A9A9A9;
+}
+
+/*button CSS*/
+#search{
+	background-color: #FF7E2D;
+	border-radius: 50px;
+	font-size: 15px;
+	padding: 10px 35px;
+	box-shadow: 2px 5px 8px 5px #E2E2E2;
+}
+
+/*1st Page CSS*/
+.welcome{
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 115vh;
+}
+.welcome__fake{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left:45;
+    top: 0;
+    z-index: 5;
+}
+.welcome__shapes{
+	position: absolute;
+	top:-10px;
+	left: 390px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+/*SVG Pattern CSS*/
+.welcome__shape-black{
+	position: absolute;
+    z-index: 3;
+    top: 365px;
+    left: 45px;
+    transition: all 350ms linear 0s;
+    transform: translate(0px,0px);
+}
+.welcome__shape-orange{
+	position: absolute; */
+    z-index: 2;
+    top: 65px;
+    left: 145px;
+    transition: all 350ms linear 0s;
+    transform: translate(0px,0px);
+}
+.welcome__shape-blue{
+	position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: -180px;
+    transition: all 350ms linear 0s;
+    transform: translate(0px,0px);
+}
+
+/*First Page text CSS*/
+.welcome__text{
+    position: relative;
+    font-size: 50.4px;
+    letter-spacing: 0.03em;
+    line-height: 67.5px;
+    font-weight: 400;
+    z-index: 6;
+    margin: 40px 0 90px 350px;
+}
+
+.welcomeForm{
+    position: relative;
+    z-index:6;
+}
+.formStyle{
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px 0px #A9A9A9;
+}
+#email{
+    padding: 0 0 0 25px;
+    font-weight: normal;
+    font-size: 12.6px;
+}
+.circle{
+    top: 0%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #a4d7eb;
+    right: 5%;
+    transition: all 2.6s linear;
+    -webkit-transition:all 2.6s linear;
+    -moz-transition:all 2.6s linear;
+}
+.heading{
+    margin: 0 0 114px 194px;
+    border-left: 4px solid;
+    padding : 0 0 5px 20px;
+    border-color: #ff7e2d;
+}
+.heading2{
+    margin: 0 0 40px 280px;
+}
+#learn{
+    background-color: #a4d7eb;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 15px 55px;
+    box-shadow: 2px 5px 8px 5px #E2E2E2;
+}
+#learn:hover{
+    background-color: #CBDEE7;
+}
+.backCloud{
+    background-image: url("../images/backCloud.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    right: 10px;
+    bottom: 20%;
+    padding: 110px 0 140px 0;
+    position: relative;
+    transition: all 1s linear 0s;
+}
+#cloud{
+    margin: -55px 0 0 150px;
+    position: relative;
+}
+.row2{
+    position: relative;
+}
+#circle{
+    border: none;
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+    background-color: PowderBlue;
+    transition: all 1.3s linear;
+    margin: 140px 0 0 0;
+}
+
+#third_page{
+    margin: 201px 0 0 100px;
+}
+.heading3{
+    margin: 70px 0 50px 110px;
+}
+.heading4{
+    margin: 0 0 40px 110px;
+}
+
+#outback{
+    background-image: url("../images/outback.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    bottom: 10%;
+    margin: 0 0 0 27px;
+    padding: 110px 0 140px 20px;
+    position: relative;
+    transition: all 1s linear;
+}
+#out{
+    margin: -5px 0 0 60px;
+    position: relative;
+}
+#explore{
+    background-color: #FF7E2D;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 15px 55px;
+    box-shadow: 2px 5px 8px 5px #E2E2E2;
+}
+#fourth_page{
+    margin: 237px 0 50px 80px;
+    border-left: 4px solid;
+    padding : 0 0 5px 20px;
+    border-color: #ff7e2d;
+}
+.heading5{
+    border-left: 4px solid;
+    padding : 0 0 5px 20px;
+    border-color: #ff7e2d;
+}
+#result_container{
+    margin: 158px 0 70px 185px;
+}
+.coreTeam{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border-radius: 125px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+#footer{
+    background-image: url("../images/footer.svg");
+    margin: 120px 0 0 0;
+    padding: 120px ;
+    position: absolute;
+}
+#footer_contact{
+    position: relative;
+    right: 50;
+    left:50;
+    border: none;
+    border-radius: 120px;
+    padding: 75px 80px 75px 80px;
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.text{
+    margin: 11% 0 0 0;
+}
+#circle2{
+    border: none;
+    height:30px;
+    width:30px;
+    border-radius: 15px;
+    background-color: #FF7E2D;
+    transition: all 0.3s linear;
+}
+.goLeft{
+    top:37%;
+    right: 90%;
+}
+.goRight{
+    top:65%;
+    right: 0%
+}
+.goDown{
+    top:90%;
+    right: 90%;
+}
+.social{
+    margin-top: 7%;
+    margin-left:7%;
+    padding-bottom: 3%;
+}
+.social-image{
+    padding:0 20px;
+}
+.address{
+
+    border-right: 2px solid #1d1d1d;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: normal;
+    color: #262626;
+ }
+ .email{
+    font-weight: bold;
+    font-size: 13.5px;
+    line-height: normal;
+    color: #262626;
+    text-decoration: none;
+}
+.con{
+    border-top: 1px solid #83ACBC;
+    width: 80%;
+    margin: 0 auto;
+}

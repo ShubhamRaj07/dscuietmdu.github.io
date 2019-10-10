@@ -14,7 +14,9 @@ $(".welcome").on("mousemove",function(e){
 	var valueY = (e.clientY * 1 / 5);
 
 	black.css({
-		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
+		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-webkit-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-ms-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
 	});
 })
 
@@ -24,7 +26,9 @@ $(".welcome").on("mousemove",function(e){
 	var valueY = (e.clientY * 1 / 15);
 
 	orange.css({
-		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
+		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-webkit-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-ms-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
 	});
 })
 
@@ -34,7 +38,9 @@ $(".welcome").on("mousemove",function(e){
 	var valueY = (e.clientY * 1 / 15);
      
      blue.css({
-		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
+		'transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-webkit-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)',
+		'-ms-transform': 'translate3d('+valueX+'px, '+valueY+'px,0) translate(0px,0px)'
 	});
 })
 

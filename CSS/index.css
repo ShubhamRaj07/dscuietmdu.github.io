@@ -148,16 +148,6 @@ body{
 .row2{
     position: relative;
 }
-#circle{
-    border: none;
-    height:50px;
-    width:50px;
-    border-radius: 50px;
-    background-color: PowderBlue;
-    transition: all 1.3s linear;
-    margin: 140px 0 0 0;
-}
-
 #third_page{
     margin: 201px 0 0 100px;
 }
@@ -191,10 +181,50 @@ body{
     box-shadow: 2px 5px 8px 5px #E2E2E2;
 }
 #fourth_page{
-    margin: 237px 0 50px 80px;
+    margin: 237px 0 70px 80px;
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text2{
+    margin-top: 20px;
+}
+.text3{
+    margin-top: 53px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.over:hover .overlay {
+  opacity: 1;
+  
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading5{
     border-left: 4px solid;

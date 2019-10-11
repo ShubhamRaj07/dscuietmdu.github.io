@@ -1,5 +1,8 @@
 body{
     font-family: "Open Sans",sans-serif;
+    background-image: url("../images/lines.png"), url("../images/back.png");
+    background-attachment: fixed;
+    position: relative;
 }
 
 #logo{
@@ -10,97 +13,47 @@ body{
     box-shadow: 0px 0px 8px 0px #A9A9A9;
 }
 
-/*button CSS*/
-#search{
-	background-color: #FF7E2D;
-	border-radius: 50px;
-	font-size: 15px;
-	padding: 10px 35px;
-	box-shadow: 2px 5px 8px 5px #E2E2E2;
-}
-
 /*1st Page CSS*/
-.welcome{
-	position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 115vh;
-}
-.welcome__fake{
-	position: absolute;
-    width: 100%;
-    height: 100%;
-    left:45;
-    top: 0;
-    z-index: 5;
-}
-.welcome__shapes{
-	position: absolute;
-	top:-10px;
-	left: 390px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 500px;
-}
-/*SVG Pattern CSS*/
-.welcome__shape-black{
-	position: absolute;
-    z-index: 3;
-    top: 365px;
-    left: 45px;
-    transition: all 350ms linear 0s;
-    transform: translate(0px,0px);
-}
-.welcome__shape-orange{
-	position: absolute; */
-    z-index: 2;
-    top: 65px;
-    left: 145px;
-    transition: all 350ms linear 0s;
-    transform: translate(0px,0px);
-}
-.welcome__shape-blue{
-	position: absolute;
-    z-index: -1;
-    top: -60px;
-    left: -180px;
-    transition: all 350ms linear 0s;
-    transform: translate(0px,0px);
-}
-
-/*First Page text CSS*/
-.welcome__text{
+#layer{
     position: relative;
-    font-size: 50.4px;
-    letter-spacing: 0.03em;
-    line-height: 67.5px;
-    font-weight: 400;
-    z-index: 6;
-    margin: 40px 0 90px 350px;
 }
-
-.welcomeForm{
-    position: relative;
-    z-index:6;
+.home_page{
+    margin: 140px 0 80px 0px;
+    height: 70vh;
+    position: absolute;
+    top: 80;
+    transition: all 350ms linear 0s;
+    transform: translate(0px,0px);
 }
-.formStyle{
-    height: 55px;
-    border: none;
-    border-radius: 50px;
+.home_text{
+    margin: 240px 0 0 119px;
+    font-family: Open-Sans, sans-serif;
+    font-size: 52px;
     font-weight: bold;
-    box-shadow: 0px 0px 8px 0px #A9A9A9;
+
 }
-#email{
-    padding: 0 0 0 25px;
-    font-weight: normal;
-    font-size: 12.6px;
+.home_text2{
+    margin: 20px 0 50px 119px;
+    font-family: 'Barlow', sans-serif;
+}
+.homebutton{
+    margin: 50px 370px 0 119px;
+    border: 2px solid #0588B4;
+    background-color:  #0588B4;
+    border-radius: 40px;
+    padding: 3px;
+    text-align: center;
+}
+.homebutton2{
+    margin: 20px 0 0 136px;
+    border: 2px solid #0588B4;
+    background-color:  #0588B4;
+    border-radius: 40px;
+    padding: 3px;
+    text-align: center;
 }
 .circle{
-    top: 0%;
+    top: 17%;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -112,13 +65,17 @@ body{
     -moz-transition:all 2.6s linear;
 }
 .heading{
-    margin: 0 0 114px 194px;
+    margin: 160px 0 84px 194px;
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
+    position: relative;
+    bottom: 40;
+    font-family: 'Roboto Mono', monospace;
 }
 .heading2{
-    margin: 0 0 40px 280px;
+    margin: 0 0 40px 194px;
+    font-family: 'Barlow', sans-serif;
 }
 #learn{
     background-color: #a4d7eb;
@@ -135,29 +92,35 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    right: 10px;
-    bottom: 20%;
+    left: 0%;
+    bottom: 15%;
     padding: 110px 0 140px 0;
     position: relative;
     transition: all 1s linear 0s;
 }
 #cloud{
-    margin: -55px 0 0 150px;
+    margin: -55px 0 0 40px;
     position: relative;
 }
 .row2{
     position: relative;
 }
 #third_page{
-    margin: 201px 0 0 100px;
+    margin: 90px 0 0 100px;
 }
 .heading3{
     margin: 70px 0 50px 110px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
 }
 .heading4{
     margin: 0 0 40px 110px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 32px;
 }
-
+.heading6{
+    margin: 0 0 40px 110px;
+}
 #outback{
     background-image: url("../images/outback.svg");
     background-repeat: no-repeat;
@@ -181,10 +144,12 @@ body{
     box-shadow: 2px 5px 8px 5px #E2E2E2;
 }
 #fourth_page{
-    margin: 237px 0 70px 80px;
+    margin: 187px 0 70px 80px;
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
+    font-family: 'Barlow', sans-serif;;
+    font-size: 38px
 }
 .image {
   display: block;
@@ -230,6 +195,9 @@ body{
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 38px;
+
 }
 #result_container{
     margin: 158px 0 70px 185px;
@@ -239,7 +207,10 @@ body{
     width: 250px;
     position: relative;
     border-radius: 125px;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 0px 0px 20px 0px #ccc;
+}
+.carouselPic{
+    padding: 20px 0px 0 0px;
 }
 #footer{
     background-image: url("../images/footer.svg");
@@ -258,6 +229,7 @@ body{
 }
 .text{
     margin: 11% 0 0 0;
+    font-family: 'Barlow', sans-serif;
 }
 #circle2{
     border: none;
@@ -268,7 +240,7 @@ body{
     transition: all 0.3s linear;
 }
 .goLeft{
-    top:37%;
+    top:42%;
     right: 90%;
 }
 .goRight{

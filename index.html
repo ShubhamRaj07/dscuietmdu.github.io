@@ -3,12 +3,15 @@
 <head>
 	<title>DSC | UIET MDU</title>
 <!-- Latest compiled and minified CSS -->
+<link rel = "icon" type = "image/png" href = "./images/logo.png" height="30px" width="30px">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="CSS/index.css">
+<link rel="stylesheet" href="CSS/animate.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Barlow|Roboto|Roboto+Mono|Lato|Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -44,55 +47,34 @@
   </div>
 </nav>
 <!-- End of Navbar -->
-
-
-<main class="page-main" role="main">
-  <section class="welcome">
-    <div class="welcome__fake"></div>
-    <div class="container">
-      <div class="welcome__shapes" data-aos="fade-in">
-        <div class="welcome__shape-black"><svg class="morph-black" width="350" height="350" viewBox="0 0 359 350"
-            fill="none" xmlns="http://www.w3.org/2000/svg"><!-- Shape Black -->
-            <path
-              d="M258.912 82.4892C282.232 121.866 290.313 163.159 278.83 194.59C267.347 226.02 236.301 247.589 201.002 267.313C165.702 287.037 126.15 304.916 89.7879 295.338C53.4963 285.76 20.4653 248.795 6.92685 203.317C-6.61161 157.838 -0.65752 103.987 27.9079 63.4038C56.4733 22.8206 107.65 -4.49505 152.448 0.613323C197.245 5.7217 235.663 43.1122 258.912 82.4892Z"
-              fill="#262626" />
-          </svg>
-        </div>
-        <div class="welcome__shape-orange"><svg class="morph-orange" width="490" height="529" viewBox="0 0 490 529"
-            fill="none" xmlns="http://www.w3.org/2000/svg"><!-- Shape Orange -->
-            <path
-              d="M381.492 407.205C332.977 469.461 256.124 508.329 204.926 487.885C153.699 467.329 128.015 387.488 97.6071 331.72C67.1988 275.951 32.1219 244.477 28.3398 204.391C24.5858 164.416 52.1826 116.052 98.5082 84.1859C144.751 52.4584 209.613 37.2568 274.697 55.0205C339.753 72.6732 405.003 123.18 427.58 191.187C450.186 259.304 430.007 344.949 381.492 407.205Z"
-              fill="#FF7E2D" />
-          </svg>
-        </div>
-        <div class="welcome__shape-blue"><svg width="628" class="morph-blue" height="680" viewBox="0 0 628 680"
-            fill="none" xmlns="http://www.w3.org/2000/svg"><!-- Shape Blue -->
-            <path
-              d="M242.321 93.8082C335.335 51.4869 446.829 53.0003 493.305 107.174C539.746 161.492 521.312 268.504 522.742 350.732C524.172 432.96 545.533 490.116 525.823 538.376C506.147 586.493 445.468 625.425 373.199 634.193C301.108 642.851 217.571 621.378 153.556 561.95C89.5064 502.666 44.9452 405.571 59.8425 314C74.7741 222.286 149.308 136.13 242.321 93.8082Z"
-              fill="#A4D7EB" />
-          </svg>
-        </div>
-      </div>
-        <div class="welcome__block"><!-- 1st Page Text -->
-        <div class="welcome__text text-white" data-aos="fade-in" data-aos-once="true" data-aos-delay="200"><b>Connect</b> <br><b>Build
-          and Grow</b><br>
-          <b>with</b> <br>DSC UIET MDU</div>
-            <div class="welcomeForm"><!-- 1st Page Button and Input Placeholder -->
-              <div class="row">
-              <div class="col-md-2"></div>
-                <div class="col-md-4 mr-5"><!-- 1st Page Input Placeholder -->
-                  <input type ="email" name="email" placeholder="Your buisness email" class="form-control formStyle" id="email">
-                </div>
-                <div class="col-md-4"><!-- 1st Page Button -->
-                  <input type="submit" name="submit" value="Submit Your Project Idea" class="form-control formStyle">
-                </div>
+<div class="back">
+    <main class="page-main" role="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7"><!-- Text Side -->
+          <h2 class="home_text"><span style="color:#EA4335" class="animated zoomIn">Connect</span> | <span style="color:#FDD35B; animation-delay: 700ms" class="animated zoomIn">Build</span> | <span style="color: #0F9D58; animation-delay: 1s" class="animated zoomIn">Grow</span></h2>
+          <h2 class="home_text2 animated fadeInLeft" style="animation-delay: 1.2s">with <span style="color:#4285F4">Developer Student Club</span> UIET MDU</h2>
+          <div class="homebutton animated zoomIn"><!-- Buttons -->
+            <button class="btn my-2 my-sm-0" id="buttonhome" style="animation-delay: 1.5s">
+            <a href="#" class="text-white"><b>Become a Member</b></a></button>
+          </div>
+          <div class="row animated zoomIn" style="animation-delay: 1.5s">
+              <div class="col-md-4 homebutton2">
+                <button class="btn my-2 my-sm-0">
+                <a href="#" class="text-white"><b>Submit Your Idea</b></a></button>
               </div>
-            </div>
+              <div class="col-md-4 homebutton2" style="margin-left:20px;">
+                <button class="btn my-2 my-sm-0">
+                <a href="#" class="text-white"><b>Become a DSC Co-Lead</b></a></button>
+              </div>
           </div>
         </div>
+        <div class="col-md-5" id="layer"><!-- Image Side -->
+          <img src="./images/home.png" alt="home" class="home_page animated zoomIn">
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+    </main>
   <!-- End of 1st Page -- >
   <!-- 2nd Page Solution -->
 <div class="row col-md-12 row2"><!-- Circle Animation Used -->
@@ -102,17 +84,17 @@
   <div class="container-fluid" id="about">
     <h1 class="heading"><b>About Us</b></h1>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7" data-aos="fade-in">
           <h2 class="heading2" style="border-left: 4px solid; padding : 0 0 5px 20px; border-color: #A3D6EA;">Developer Student Club</h2><!-- About DSC -->
           <h5 class="heading2" style="font-family: 'Open Sans', sans-serif;"><br>
-          By joining a DSC, students build their professional and personal network,<br> get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer learning environment.<br>
+          Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome.
           </h5>
           <div class="heading2">
             <button class="btn my-2 my-sm-0 mr-3" id="learn">
             <a href="https://developers.google.com/community/dsc/"><b>Learn More</b></a></button>
           </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div class="container-fluid backCloud">
           <img src="images/cloud.svg" id="cloud">
         </div>
@@ -123,17 +105,14 @@
   <div class="container-fluid" id="third_page"><!-- About DSC UIET MDU -->
     <div class="row">
       <div class="col-md-5 text-center">
-        <div class="container-fluid" id="outback">
+        <div class="container-fluid" id="outback" data-aos="zoom-in-up">
           <img src="images/out.svg" id="out">
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6" data-aos="fade-in">
           <h2 class="heading3" style="border-left: 4px solid; padding : 0 0 5px 20px; border-color: #A3D6EA;">UIET, MDU</h2>
           <h3 class="heading4">DSC UIET MDU</h3>
-          <h5 class="heading4" style="font-family: 'Open Sans', sans-serif;">We improve your flow of leads with<br>
-          world-class copywriting, email<br>
-          management tools, and spam<br>
-          control campaigns<br></h5>
+          <h5 class="heading6" style="font-family: 'Open Sans', sans-serif;">By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community..</h5>
           <form class="form-inline heading4">
             <button class="btn my-2 my-sm-0 mr-3" type="submit" id="explore"><b>Explore More</b></button>
           </form>
@@ -143,30 +122,30 @@
 <!--End of 3rd Page -->
 <!--Start of 4th Page -->
   <div class="container" id="event">
-  <h2 id="fourth_page">Upcoming Events</h2>
+  <h2 id="fourth_page" data-aos ="fade-in">Upcoming Events</h2>
     <div class="row ml-5">
-      <div class="col-md-3 over"><!-- C Workshop -->
+      <div class="col-md-3 over" data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine"><!-- C Workshop -->
         <img src="./images/C_logo.jpg" alt="Avatar" class="image">
         <h5 class="text-center text2">C Workshop</h5>
         <div class="overlay">
           <div class="text1">Ongoing</div>
         </div>
       </div>
-      <div class="col-md-3 over"><!-- UIET MDU Website live -->
+      <div class="col-md-3 over" data-aos="fade-in" data-aos-delay="1000"><!-- UIET MDU Website live -->
         <img src="./images/web.jpg" alt="Avatar" class="image mt-5">
         <h5 class="text-center text3">DSC WEBSITE</h5>
         <div class="overlay">
           <div class="text1">Live</div>
         </div>
       </div>
-      <div class="col-md-3 over"><!-- Ml Workshop -->
-        <img src="./images/C_logo.jpg" alt="Avatar" class="image">
+      <div class="col-md-3 over" data-aos="fade-in"  data-aos-delay="1500"><!-- Ml Workshop -->
+        <img src="./images/ML.jpeg" alt="Avatar" class="image">
         <h5 class="text-center text2">ML Workshop</h5>
         <div class="overlay">
           <div class="text1">Will held on<br>16-10-2019</div>
         </div>
       </div>
-      <div class="col-md-3 over"><!-- GCP Workshop -->
+      <div class="col-md-3 over" data-aos="fade-left"data-aos-offset="300" data-aos-easing="ease-in-sine"><!-- GCP Workshop -->
         <img src="./images/gcp.jpg" alt="Avatar" class="image mt-5">
         <h5 class="text-center mt-5">GCP Workshop</h5>
         <div class="overlay">
@@ -179,16 +158,16 @@
 <!-- Start of 5th Page 1st Part -->
 
 <div class="container" id="result_container">
-  <h2 class="heading5" id="team">Meet The DSC Core Team</h2>
+  <h2 class="heading5" id="team"  data-aos="fade-in">Meet The DSC Core Team</h2>
   <div class="row">
-    <div class="col-md-4 mt-5">
+    <div class="col-md-4 mt-5"  data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine">
       <img src="images/sanjeev.jpeg" alt="dsc lead" class="coreTeam photo">
     </div>
     <div class="col-md-6">
-      <h2 class="text mb-3">Sanjeev Sharma</h2>
-      <p style="font-family: 'Open Sans', sans-serif;">A highly-motivated problem solver and android developer, He is an open source hobbyist & a community mentor keen to change makers</p>
-      <h5>Android Developer</h5>
-      <p>DSC Lead | 4th Year</p>
+      <h2 class="text mb-3"  data-aos="fade-in">Sanjeev Sharma</h2>
+      <p style="font-family: 'Open Sans', sans-serif;"  data-aos="fade-in">A highly-motivated problem solver and android developer, He is an open source hobbyist & a community mentor keen to change makers</p>
+      <h5 style="font-family: 'Open Sans', sans-serif;"><b>Android Developer</b></h5>
+      <p><b>DSC Lead</b> | 4th Year</p>
       <a href=""><i class="fa fa-github icon" style="font-size: 24px; margin:2%;"></i></a>
       <a href=""><i class="fa fa-linkedin icon" style="font-size: 22px; margin:2%;"></i></a>
       <a href=""><i class="fa fa-google icon" style="font-size: 22px; margin:2%;"></i></a>
@@ -196,17 +175,17 @@
     </div>
   </div></div>
   <div class="container">
-  <div class="row owl-carousel">
-    <div class="item text-center w-100">
-      <img src="images/suman.jpeg" alt="dsc lead" class="coreTeam">
-      <h3 class="text mb-3">Suman Ghosh</h3>
-      <h5 class="mb-3">Web Developer | 3rd Year</h5>
+  <div class="row owl-carousel owl-theme">
+    <div class="item carouselPic text-center w-100">
+      <img src="images/apoorv.jpg" alt="dsc lead" class="coreTeam">
+      <h3 class="text mb-3">Apoorv</h3>
+      <h5 class="mb-3">ML Engineer | 4th Year</h5>
       <a href=""><i class="fa fa-github text-center" style="font-size: 24px; margin:1% 0 0 0;"></i></a>
       <a href=""><i class="fa fa-linkedin text-center" style="font-size: 22px; margin:1% 0 0 5%;color: #4285F4;"></i></a>
       <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
       <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
     </div>
-    <div class="item text-center">
+    <div class="item carouselPic text-center">
       <img src="./images/swati.jpeg" alt="dsc leadswat" class="coreTeam">
       <h3 class="text mb-3">Swati Jha</h3>
       <h5 class="mb-3">Web Developer | 3rd Year</h5>
@@ -215,7 +194,16 @@
       <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
       <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
     </div>
-    <div class="item text-center">
+    <div class="item carouselPic text-center w-100">
+      <img src="images/suman.jpeg" alt="dsc lead" class="coreTeam">
+      <h3 class="text mb-3">Suman Ghosh</h3>
+      <h5 class="mb-3">Web Developer | 3rd Year</h5>
+      <a href=""><i class="fa fa-github text-center" style="font-size: 24px; margin:1% 0 0 0;"></i></a>
+      <a href=""><i class="fa fa-linkedin text-center" style="font-size: 22px; margin:1% 0 0 5%;color: #4285F4;"></i></a>
+      <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+      <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+    </div>
+    <div class="item carouselPic text-center">
       <img src="images/chirag.jpeg" alt="dsc lead" class="coreTeam">
       <h3 class="text mb-3">Chirag Sukhala</h3>
       <h5 class=" mb-3">Cyber Security | 3rd Year</h5>
@@ -224,8 +212,26 @@
       <a href=""><i class="fa fa-google " style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
       <a href=""><i class="fa fa-twitter" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
     </div>
-      <div class="item text-center">
-        <img src="images/sanjeev.jpeg" alt="dsc lead" class="coreTeam">
+    <div class="item carouselPic text-center">
+      <img src="images/Ayushi.jpeg" alt="dsc lead" class="coreTeam">
+      <h3 class="text mb-3">Ayushi Dewan</h3>
+      <h5 class="mb-3">Web Developer | 3rd Year</h5>
+      <a href=""><i class="fa fa-github text-center" style="font-size: 24px; margin:1% 0 0 0;"></i></a>
+      <a href=""><i class="fa fa-linkedin text-center" style="font-size: 22px; margin:1% 0 0 5%;color: #4285F4;"></i></a>
+      <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+      <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+    </div>
+    <div class="item carouselPic text-center w-100">
+      <img src="images/kiran.jpeg" alt="dsc lead" class="coreTeam">
+      <h3 class="text mb-3">Kiran Beniwal</h3>
+      <h5 class="mb-3">ML Facilatator | 3rd Year</h5>
+      <a href=""><i class="fa fa-github text-center" style="font-size: 24px; margin:1% 0 0 0;"></i></a>
+      <a href=""><i class="fa fa-linkedin text-center" style="font-size: 22px; margin:1% 0 0 5%;color: #4285F4;"></i></a>
+      <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+      <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
+    </div>
+      <div class="item carouselPic text-center">
+        <img src="images/Nishant.jpeg" alt="dsc lead" class="coreTeam">
         <h3 class="text mb-3">Nishant</h3>
         <h5 class="mb-3">Designer | 2nd Year</h5>
         <a href=""><i class="fa fa-github text-center" style="font-size: 24px; margin:1% 0 0 0;"></i></a>
@@ -233,7 +239,7 @@
         <a href=""><i class="fa fa-google text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
         <a href=""><i class="fa fa-twitter text-center" style="font-size: 22px; margin:1% 0 0 5%;"></i></a>
       </div>
-      <div class="item text-center">
+      <div class="item carouselPic text-center">
         <img src="images/sanjeev.jpeg" alt="dsc lead" class="coreTeam">
         <h3 class="text mb-3">Vaibhav</h3>
         <h5 class="mb-3">Programmer | 2nd Year</h5>
@@ -291,6 +297,7 @@
        </div>
   </div>
 </div>
+
 <!-- End of 5th page -->
 <!--jQuery CDN Link-->
 <script
@@ -312,19 +319,24 @@
 
 <!-- Owl Carousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
      
-      responsive: true,
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
+      autoPlay: 3000,//Set AutoPlay to 3 seconds
       items : 4,
       itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1]
+      itemsDesktopSmall : [979,1],
+      loop: true
   });
  
 });
 </script>
+<script>
+    AOS.init({
+      duration: 2000,
+    });
+  </script>
 </body>
 </html>

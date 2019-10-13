@@ -66,4 +66,5 @@ $(window).on("scroll",function(e){
     }
 })
 
+$('.navigate').smoothScroll();
 

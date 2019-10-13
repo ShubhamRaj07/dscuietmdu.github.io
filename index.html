@@ -14,33 +14,37 @@
 <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto|Roboto+Mono|Lato|Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload ="Preload()">
+
+<!-- Pre Loader -->
+<div id="loading"></div>
+
 <!-- Start of NavBar -->
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" id="navbar">
 	<div class="container-fluid">
       <a class="navbar-brand ml-md-5" href="#">
-  	    <img src="images/logo.png" class="ml-md-2 mr-2 mt-1" id="logo">
-        <h3 class="float-right mt-3 text-secondary">Developer Student Club</h3>
+  	    <img src="images/logo.png" class="ml-md-2 mr-2 mt-1s mb-1" id="logo">
+        <h4 class="float-right mt-3 text-secondary">Developer Student Club</h4>
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse" id="navbarCollapse">
        <ul class="navbar-nav ml-auto mr-2">
-         <li class="nav-item">
-           <a class="nav-link text-dark mr-3 ml-2" href="#"><b>Home</b></a>
+         <li class=" active">
+           <a class="nav-link text-dark navigate" href="#home"><span class="navtext">Home</span></a>
          </li><!-- Home -->
          <li class="nav-item">
-           <a class="nav-link text-dark mr-3 ml-2" href="#about"><b>About Us</b></a>
+           <a class="nav-link text-dark navigate" href="#about"><span class="navtext"><span class="navtext">About Us</span></a>
          </li><!-- About Us -->
           <li class="nav-item">
-           <a class="nav-link text-dark mr-3 ml-1" href="#event"><b>Timeline</b></a>
+           <a class="nav-link text-dark  navigate" href="#events"><span class="navtext">Timeline</span></a>
          </li><!-- Timeline -->
         <li class="nav-item">
-          <a class="nav-link text-dark mr-3 ml-2" href="#team"><b>Core Team</b></a>
+          <a class="nav-link text-dark navigate" href="#team"><span class="navtext">Core Team</span></a>
         </li><!-- Core Team -->
         <li class="nav-item">
-          <a class="nav-link text-dark mr-3 ml-2" href="#contact"><b>Contact Us</b></a>
+          <a class="nav-link text-dark navigate" href="#contact"><span class="navtext">Contact Us</span></a>
         </li><!-- Contact Us -->
       </ul> 
     </div>
@@ -49,23 +53,26 @@
 <!-- End of Navbar -->
 <div class="back">
     <main class="page-main" role="main">
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
       <div class="row">
         <div class="col-md-7"><!-- Text Side -->
-          <h2 class="home_text"><span style="color:#EA4335" class="animated zoomIn">Connect</span> | <span style="color:#FDD35B; animation-delay: 700ms" class="animated zoomIn">Build</span> | <span style="color: #0F9D58; animation-delay: 1s" class="animated zoomIn">Grow</span></h2>
-          <h2 class="home_text2 animated fadeInLeft" style="animation-delay: 1.2s">with <span style="color:#4285F4">Developer Student Club</span> UIET MDU</h2>
-          <div class="homebutton animated zoomIn"><!-- Buttons -->
-            <button class="btn my-2 my-sm-0" id="buttonhome" style="animation-delay: 1.5s">
-            <a href="#" class="text-white"><b>Become a Member</b></a></button>
+          <h2 class="home_text"><span style="color:#EA4335" class="animated zoomIn">Connect</span> | <span style="color:#FDD35B; animation-delay: 700ms" class="animated zoomIn">Build</span> | <span style="color: #0F9D58; animation-delay: 800ms" class="animated zoomIn">Grow</span></h2>
+          <h2 class="home_text2 animated fadeInLeft" style="animation-delay: 800ms">with <span style="color:#4285F4">Developer Student Club</span> UIET MDU</h2>
+          <div class="animated fadeIn" style="animation-delay: 1.5s"><!-- Buttons -->
+            <div class="col-md-4 border homebutton" >
+                <button class="btn my-2 my-sm-0">
+                <a href="#" class="text-white"><b style="padding: 10px">Become a Member</b></a></button>
+            </div>
+            
           </div>
-          <div class="row animated zoomIn" style="animation-delay: 1.5s">
+          <div class="row animated fadeIn" style="animation-delay: 1.5s">
               <div class="col-md-4 homebutton2">
                 <button class="btn my-2 my-sm-0">
                 <a href="#" class="text-white"><b>Submit Your Idea</b></a></button>
               </div>
               <div class="col-md-4 homebutton2" style="margin-left:20px;">
                 <button class="btn my-2 my-sm-0">
-                <a href="#" class="text-white"><b>Become a DSC Co-Lead</b></a></button>
+                <a href="#" class="text-white"><b>Become a DSC Core Team</b></a></button>
               </div>
           </div>
         </div>
@@ -121,35 +128,43 @@
   </div></div>
 <!--End of 3rd Page -->
 <!--Start of 4th Page -->
-  <div class="container" id="event">
+  <div class="container-fluid" id="events">
   <h2 id="fourth_page" data-aos ="fade-in">Upcoming Events</h2>
-    <div class="row ml-5">
-      <div class="col-md-3 over" data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine"><!-- C Workshop -->
-        <img src="./images/C_logo.jpg" alt="Avatar" class="image">
-        <h5 class="text-center text2">C Workshop</h5>
-        <div class="overlay">
-          <div class="text1">Ongoing</div>
+    <div class="row ml-5" id="event">
+      <div class="col-md-3 over" data-aos="fade-in"><!-- C Workshop -->
+        <div class="card events1">
+            <img src="./images/C_logo.jpg" alt="Avatar" class="image">
+            <h5 class="text-center text2">C Workshop</h5>
+            <div class="overlay">
+              <div class="text1">Ongoing</div>
+            </div>
         </div>
       </div>
-      <div class="col-md-3 over" data-aos="fade-in" data-aos-delay="1000"><!-- UIET MDU Website live -->
-        <img src="./images/web.jpg" alt="Avatar" class="image mt-5">
-        <h5 class="text-center text3">DSC WEBSITE</h5>
-        <div class="overlay">
-          <div class="text1">Live</div>
+      <div class="col-md-3 over" data-aos="fade-in"><!-- UIET MDU Website live -->
+        <div class="card events1">
+            <img src="./images/web.jpg" alt="Avatar" class="image">
+            <h5 class="text-center text2">DSC WEBSITE</h5>
+            <div class="overlay">
+              <div class="text1">Live</div>
+            </div>
         </div>
       </div>
-      <div class="col-md-3 over" data-aos="fade-in"  data-aos-delay="1500"><!-- Ml Workshop -->
-        <img src="./images/ML.jpeg" alt="Avatar" class="image">
-        <h5 class="text-center text2">ML Workshop</h5>
-        <div class="overlay">
-          <div class="text1">Will held on<br>16-10-2019</div>
+      <div class="col-md-3" data-aos="fade-in"><!-- Ml Workshop -->
+        <div class="card events1 over">
+            <img src="./images/ML.jpeg" alt="Avatar" class="image">
+            <h5 class="text-center text2">ML Workshop</h5>
+            <div class="overlay">
+              <div class="text1">Will held on<br>16-10-2019</div>
+            </div>
         </div>
       </div>
-      <div class="col-md-3 over" data-aos="fade-left"data-aos-offset="300" data-aos-easing="ease-in-sine"><!-- GCP Workshop -->
-        <img src="./images/gcp.jpg" alt="Avatar" class="image mt-5">
-        <h5 class="text-center mt-5">GCP Workshop</h5>
-        <div class="overlay">
-          <div class="text1">To Be Decided</div>
+      <div class="col-md-3 over" data-aos="fade-in"><!-- GCP Workshop -->
+        <div class="card events1">
+            <img src="./images/gcp.png" alt="Avatar" class="image">
+            <h5 class="text-center text2">GCP Workshop</h5>
+            <div class="overlay">
+              <div class="text1">To Be Decided</div>
+            </div>
         </div>
       </div>
     </div>
@@ -289,7 +304,7 @@
           </div>
           <p class="col-md-10 con"></p>
                <div class="col-md-12 mt-3 text-center">
-                   Made with <span style="color: red">❤</span> by <b>Swati Jha</b>
+                   Made with <span style="color: red">❤</span> by <a href="#"><b>Swati Jha</a></b>
                   </div>
               
           
@@ -316,7 +331,9 @@
 
 <!--Attached JS File -->
 <script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
 
+<script type="text/javascript" src="js/javascript.js"></script>
 <!-- Owl Carousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -335,8 +352,15 @@
 </script>
 <script>
     AOS.init({
-      duration: 2000,
+      duration: 1800,
     });
+  </script>
+  <script>
+    var preloader =document.getElementById("loading");
+
+    function Preload(){
+      preloader.style.display = "none";
+    }
   </script>
 </body>
 </html>

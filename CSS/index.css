@@ -2,17 +2,33 @@ body{
     font-family: "Open Sans",sans-serif;
     background-image: url("../images/lines.png"), url("../images/back.png");
     background-attachment: fixed;
-    position: relative;
+}
+#loading{
+    position: fixed;
+    z-index: 999;
+    background: #fff url("../images/Preloader.gif") no-repeat center;
+    width: 100%;
+    height: 100vh;
 }
 
 #logo{
     height:60px;
 }
 #navbar{
-    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
     box-shadow: 0px 0px 8px 0px #A9A9A9;
+    padding: 1px;
 }
-
+.navigate{
+    padding: 25px 0px;
+}
+.navtext{
+    padding: 0 12px;
+}
+.navigate:hover{
+    background-color: #DCDCDC;
+    height: 100%;
+}
 /*1st Page CSS*/
 #layer{
     position: relative;
@@ -26,7 +42,7 @@ body{
     transform: translate(0px,0px);
 }
 .home_text{
-    margin: 240px 0 0 119px;
+    margin: 190px 0 0 119px;
     font-family: Open-Sans, sans-serif;
     font-size: 52px;
     font-weight: bold;
@@ -37,11 +53,11 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 .homebutton{
-    margin: 50px 370px 0 119px;
+    margin: 70px 0px 0 120px;
     border: 2px solid #0588B4;
     background-color:  #0588B4;
     border-radius: 40px;
-    padding: 3px;
+    padding: 5px 0px 5px 0px;
     text-align: center;
 }
 .homebutton2{
@@ -65,7 +81,7 @@ body{
     -moz-transition:all 2.6s linear;
 }
 .heading{
-    margin: 160px 0 84px 194px;
+    margin: 150px 0 84px 120px;
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
@@ -74,7 +90,7 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 .heading2{
-    margin: 0 0 40px 194px;
+    margin: 0 0 40px 120px;
     font-family: 'Barlow', sans-serif;
 }
 #learn{
@@ -127,13 +143,13 @@ body{
     background-position: center;
     background-size: contain;
     bottom: 10%;
-    margin: 0 0 0 27px;
-    padding: 110px 0 140px 20px;
+    margin: 0 0 0 0px;
+    padding: 110px 0 140px 0px;
     position: relative;
     transition: all 1s linear;
 }
 #out{
-    margin: -5px 0 0 60px;
+    margin: -5px 0 0 10px;
     position: relative;
 }
 #explore{
@@ -144,7 +160,7 @@ body{
     box-shadow: 2px 5px 8px 5px #E2E2E2;
 }
 #fourth_page{
-    margin: 187px 0 70px 80px;
+    margin: 187px 0 70px 132px;
     border-left: 4px solid;
     padding : 0 0 5px 20px;
     border-color: #ff7e2d;
@@ -152,15 +168,29 @@ body{
     font-size: 38px
 }
 .image {
-  display: block;
+  display: inline;
   width: 100%;
-  height: auto;
+  height: 230px;
+  padding: 20px;
 }
 .text2{
     margin-top: 20px;
 }
-.text3{
-    margin-top: 53px;
+#event{
+    margin: 0px 0px 0 140px;
+    padding: 0 70px;
+}
+.events1{
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px #E2E2E2;
+    position: static;
+    border: 1px  #E2E2E2;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.timeline{
+    height: 250px;width: 250px;
 }
 .overlay {
   position: absolute;
@@ -170,6 +200,7 @@ body{
   right: 0;
   height: 100%;
   width: 100%;
+  border-radius: 20px;
   opacity: 0;
   transition: .5s ease;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
